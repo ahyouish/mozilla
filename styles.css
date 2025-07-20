@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  color: white;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+.container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.logo {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px yellow;
+  animation: float 4s infinite ease-in-out;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.video {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background: orange;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
